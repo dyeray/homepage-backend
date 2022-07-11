@@ -5,15 +5,18 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
+    "reset": "node src/commands/init_db.js",
+    "sync": "node src/commands/sync_db.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@databases/pg": "^5.4.1",
+    "@databases/pg-bulk": "^1.2.0",
     "axios": "^0.25.0",
     "cheerio": "^1.0.0-rc.10",
-    "express": "^4.17.2",
-    "pg": "^8.7.3"
+    "express": "^4.17.2"
   },
   "type": "module",
   "engines": {
